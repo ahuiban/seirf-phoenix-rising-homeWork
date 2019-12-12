@@ -24,4 +24,15 @@ for (let i = 99; i >= 1; i -= 2) {
     console.log(i);
 }
 7.
-
+for (let i = 49; i <= 72; i++) {
+    console.log(i);
+}
+8.
+for (let i = 81; i >= 26; i--) {
+    console.log(i);
+}
+9.
+for (let i = 3; i <=90; i += 3) {
+    console.log(i);
+}
+*/

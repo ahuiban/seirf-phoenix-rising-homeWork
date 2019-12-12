@@ -1,12 +1,17 @@
 
 header {
     text-align: center;
+    text-transform: uppercase;
 }
     
 }
 h1 {
     text-align: center;
     font-size: 60px;
+}
+
+p {
+    text-align: center;
 }
 
 h3 {
@@ -16,10 +21,20 @@ h3 {
 
 img {
     width: 300px;
+    border: 1px black;
 }
+
+table, th, td {
+    border: 1px solid black;
+    
+  }
+  table {
+      align-content: center;
+  }
 
 body {
     margin: 30px;
+    border: 2px 0px 2px 0px;
 }
 
 ul { list-style-type: none; }
