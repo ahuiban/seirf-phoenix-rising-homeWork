@@ -11,3 +11,15 @@ R: Within a function, we use RETURN to output a value back to where it was calle
 we use CONSOLE.LOG to inspect values, for debugging purposes.
 
 
+*/
+
+const checkPalindrome = (str) => {
+
+    const reversedStr = str.toLowerCase().split('').reverse().join('')
+    if(reversedStr === str.toLowerCase()) {
+        return true
+}
+return false
+};
+
+console.log(checkPalindrome("RaDar"));
