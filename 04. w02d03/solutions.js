@@ -45,14 +45,53 @@ return sum
 
 console.log(sumArray([10,11,12,13,17]));
 
+
+//// PRIME NUMBERS ////
+
+Write a function called checkPrime that will test whether a number is Prime. 
+The function will return true (Boolean) if Prime, false if not.
+
+Hint: Check every number up to the square root. To do this, try a for loop.
+R:
+const checkPrime = (prm) => {
+    for (let i = 2; i <= Math.sqrt(prm); i++) {
+        if (prm % i === 0) {
+            return false
+        }
+    }
+    return true
+}
+
+console.log(checkPrime(79)); > true
+
+Write another function called printPrimes that will print (console log) all the Primes up to an arbitrary limit. 
+For example, if you invoke your function with printPrimes(97), it will print all the Prime numbers up to and including 97.
+This function can call on the previous checkPrime function.
+
+R:
+
+
+const checkPrime = (prm) => {
+    for (let i = 2; i <= Math.sqrt(prm); i++) {
+        if (prm % i === 0) {
+            return false
+        }
+    }
+    return true
+}
+
+
+
+const printPrimes = (lim) => {
+    for (let i = 0; i <= lim; i++) {
+        if(checkPrime(i)) {
+            console.log(i)
+        }
+    }
+}
+
+printPrimes(97);
+
+
 */
-
-
-const sumArray = [1, 2, 3, 5, 9];
-
-for (let i = 0, sum = 0; i < sumArray.length; sum += sumArray[i++]);
-
-console.log(sum);
-
-
 
