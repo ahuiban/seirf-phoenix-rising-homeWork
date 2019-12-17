@@ -92,6 +92,58 @@ const printPrimes = (lim) => {
 
 printPrimes(97);
 
+//// Rock Paper Scissors ////
+
+Write a function called randomMove that returns a randomly chosen move (rock, paper, or scissors)
+
+R:
+const randomMove = () => {
+    const moveArray = ["rock", "paper", "scissors"];
+
+    const randomNumber = Math.floor(Math.random() * (moveArray.length));
+        console.log(randomNumber);
+        return moveArray[randomNumber];
+}
+
+Then create a function called rockPaperScissors that runs one round of the game. 
+It should accept two arguments, the computer's move and the user's move, and somehow compare the two to decide who the winner is and return who won.
+
+R:
+
+const randomMove = () => {
+    const moveArray = ["rock", "paper", "scissors"];
+
+    const randomNumber = Math.floor(Math.random() * (moveArray.length));
+        console.log(randomNumber);
+        return moveArray[randomNumber];
+}
+
+
+let computersMove = randomMove();
+let usersMove = randomMove();
+
+
+const rockPaperScissors = (computersMove, usersMove) => {
+    
+    console.log('computer chose ', computersMove)
+    
+    console.log('user chose ', usersMove)
+    
+    if(computersMove === usersMove) {
+      console.log('played the same move, tie!');
+    } else if(computersMove === 'rock') {
+        if(usersMove === 'paper') { console.log('paper beats rock, user wins') }
+        else if(usersMove === 'scissors') { console.log('rock beats scissors, computer wins') }
+    } else if(computersMove === 'paper') {
+        if(usersMove === 'rock') { console.log('paper beats rock, computer wins') }
+        else if(usersMove === 'scissors') { console.log('scissors beats rock, user wins') }
+    } else {
+        if(usersMove === 'rock') { console.log('rock beats scissors, user wins') }
+        else if(usersMove === 'paper') { console.log('scissors beats paper, computer wins') }
+    }
+  }
+  
+  rockPaperScissors(computersMove, usersMove)
 
 */
 
