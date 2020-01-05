@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+
+body {
+  background: url(images/landscape.jpg) no-repeat center center fixed;
+  background: #07710F;
+  background-size: cover;
+  color: antiquewhite;
+}
+
+/* * {
+  border: 1px solid gold;
+} */
+/*https://pixabay.com/en/dew-morning-meadow-bokeh-morgentau-1507498/*/
+
+h1 {
+  color: white;
+  font-size: 8vh;
+  text-align: center;
+  margin-top: 8vw;
+  text-shadow: 5px 2px #000000;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.messages {
+  min-height: 5vw;
+  background: #06600D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.store {
+  min-height: 5vw;
+  background: #17711F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+h5 {
+  font-size: 2em;
+  text-align: center;
+  flex-basis: 90%;
+  margin: .1em;
+}
+
+h6 {
+  font-size: 1.5em;
+  text-align: center;
+  flex-basis: 90%;
+  margin: .1em;
+}
+
+span {
+    color: white;
+}
+
+button {
+  display: block;
+  margin: auto;
+  background: white;
+  font-size: 1.2em;
+}

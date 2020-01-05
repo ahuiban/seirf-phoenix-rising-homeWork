@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Landscaper Game</title>
+</head>
+
+<body>
+    
+    <script type="text/javascript" src="./Landscaper Game_files/app.js"></script>
+
+    <h1>Landscaper Game</h1>
+    <div class="messages">
+  <h5>the game has started</h5>
+  <h6>Current tool: <span> teeth</span></h6>
+  <h6>Current earnings: <span>1</span></h6>
+  <h6>Player bank account: <span> 0</span></h6>
+  </div>
+    <button class="landscape">landscape</button>
+    <div class="store">
+      <h5> Item available for purchase</h5>
+      <h6> rusty scissors</h6>
+      <h6> Purchase price: 5</h6>
+    <p>You can't afford this yet</p></div>
+    <h2>Instructions</h2>
+    <p>Welcome to the game! You are starting a landscaping business. Use your tools to earn more money!</p><p>
+            </p><p>You win the game when you have a team of starving students helping and $1,000.</p>
+            <p>To start, the only tool you have are your teeth. Using just tool, you can spend the day cutting lawns and
+                make money. You can do this as much as you want.</p>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+<link rel="stylesheet" href="./Landscaper Game_files/style.css"></body></html>

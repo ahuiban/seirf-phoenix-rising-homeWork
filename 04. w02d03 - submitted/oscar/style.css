@@ -1,0 +1,111 @@
+.box h1 {
+    color: white;
+    font-size: 52px;
+
+}
+
+.box p {
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.box .contain {
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.button1 {
+    background-color: white;
+    color: #3842d2;
+    padding: 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.float {
+    float: left;
+
+}
+
+.alignRight {
+	float: right;
+  text-indent: 60px;
+}
+
+.container {
+    text-align: center;
+    color: white;
+    display: flex;
+    padding: 20px;
+}
+
+.one, .two, .three {
+    text-align: center;
+    outline: grey solid 2px; 
+    margin: 20px;
+}
+
+.small {
+    padding:2em;
+    font-size: 10px;
+    color: darkgrey;
+    border-radius: 10px;
+}  
+
+nav {
+    padding: 40px;
+    text-align: left;
+    table-layout: center;
+}
+
+button:hover {
+    background-color: rgb(8,52,188);
+    color: white;
+}
+
+.box {
+    background-color: #3842d2;
+    width: 100%;
+    height: 450px;
+}
+
+table {
+    padding: 40px;
+    align-content: center;
+}
+
+h4 {
+    color: grey;
+    font-size: 20px;
+    text-align: center;
+}
+
+h5{
+    font-size: 45px;
+    text-align: center;
+    padding: 0,15px,0,10px;
+}
+
+h6{
+    font-size: 15px;
+}
+
+.square {
+    font-size: 20px;
+    margin: 0px 88px 0px 88px;
+    padding: 2em;
+    border-radius: 10px;
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    vertical-align: 100px;
+}
+
+a {
+    color:grey;
+    font-size: 10px;
+    text-decoration: none;
+}
