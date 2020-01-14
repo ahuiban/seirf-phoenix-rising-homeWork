@@ -65,3 +65,29 @@ console.log(crayonSelector().crayola[1]);
 const powerButton = () => {
     return
 }
+
+
+///VENDING MACHINE ///
+
+const vendingMachine = {
+    snacks: [
+        {
+            name: "mini brownies",
+            price: 2,
+        },
+        {
+            name: "Dr. Peper",
+            price: 3
+        },
+        {
+            name: "Orbit",
+            price: 1
+        }
+    ],
+    vend(input) {
+        console.log("vending", vendingMachine.snacks[input]);
+    }
+};
+
+vendingMachine.vend(2);
+
