@@ -54,7 +54,7 @@ let gameState = {
 console.log("Generating enemy ships");
 enemy = new AlienShip();
 console.log(enemy);
-Upgrade to an array of 6 enemy ships:
+//Upgrade to an array of 6 enemy ships:
 enemies = [];
 for (let i = 0; i < 6; i++) {
     enemies.push(new AlienShip());
