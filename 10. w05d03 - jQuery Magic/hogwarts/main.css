@@ -1,9 +1,14 @@
 body {
     background-color: #F8F7FF;
     text-align: center;
+    text-decoration: none;
     
 }
 
-.dog {
+.cat {
     font-family: fantasy;
+}
+
+.secret {
+    opacity: 0.5;
 }

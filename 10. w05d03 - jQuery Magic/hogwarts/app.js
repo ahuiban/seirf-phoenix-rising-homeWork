@@ -34,9 +34,59 @@ $(() => {
     //Need help coming up with one? Here is one of many websites to help you find your wand playbuzz.com )
 
     const $h4 = $("<h4>")
-    $h4.addClass("dog").text("Griff")
+
+    $h4.addClass("cat").text("Camden")
     $h4.text("Hawthorn Wand with Dragon Heartstring Core")
     $("#container").append($h4)
+
+
+
+    //     Year 3
+    // Following what you did in previous years, add the following into an unordered list (with the attribute of storage and a value of trunk):
+
+    // list items of
+    // butter beer
+    // invisibility cloak (add a class of secret)
+    // magic map (add a class of secret)
+    // time turner (add a class of secret)
+    // leash (for your pet, be sure to give this list element the same class as you gave your pet)
+    // Bertie Bott's Every Flavor [Jelly] Beans.
+    // append the unordered list to your container div
+
+    const $ul = $("<ul>")
+
+    $ul.attr("ul", "storage").val("trunk")
+    const $li = $("<li>").text("butter beer")
+
+
+    $li.addClass("secret").text("invisibility cloak")
+
+    $("<ul>").appendTo("<li>")
+
+    $("#container").append($ul, $li)
+
+
+
+
+    //Year 4
+    // You want to show off how many classes you are taking
+
+    // Make a table
+    // Hint: Look under More Examples, <p>Simple table with header</p> at MDN to see the correct HTML element layout
+
+    // Right above your table add an h5 that says 'Spring 2017'
+    // Inside the table add a thead element
+    // Inside the thead element add two th elements
+    // in the first th add the text Day
+    // in the second th add the text Classes
+    // Create a tr element and add two td elements inside.
+    // in the first td add the day Monday
+    // in the second td add the classes you are taking (Herbology, Divination, History of Magic, Charms, Potions, Transfiguration, Defense Against the Dark Arts, Quidditch practice, etc.)
+    // Create more tr elements with tds inside so that you have Monday - Friday and classes each of those days
+    // In your main.css file, add a gray 1px solid border around your table, th elements and td elements
+    // In your main.css file, add a rule that will center your table on the page
+
+
 
 });
 
