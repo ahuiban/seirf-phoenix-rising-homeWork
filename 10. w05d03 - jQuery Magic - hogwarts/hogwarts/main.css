@@ -1,7 +1,7 @@
 body {
     background-color: #F8F7FF;
     text-align: center;
-    text-decoration: none;
+    
     
 }
 
@@ -11,4 +11,8 @@ body {
 
 .secret {
     opacity: 0.5;
+}
+
+li {
+    list-style-type: none;
 }

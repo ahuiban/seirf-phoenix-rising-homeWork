@@ -38,28 +38,27 @@ $(() => {
 
     //     Year 3
     // Following what you did in previous years, add the following into an unordered list (with the attribute of storage and a value of trunk):
-
-    // list items of
+    const $storage = $("<ul>").attr("id", "storage").text("trunk");
+    $($container).append($storage);
+    // list items of:
     // butter beer
+    const $butterBeer = $("<li>").text("butter beer");
+    $($storage).append($butterBeer);
     // invisibility cloak (add a class of secret)
+    const $invisibilityCloak = $("<li>").text("invisibility cloak").addClass("secret");
+    $($storage).append($invisibilityCloak);
     // magic map (add a class of secret)
+    const $magicMap = $("<li>").text("magic map").addClass("secret");
+    $($storage).append($magicMap);
     // time turner (add a class of secret)
+    const $timeTuner = $("<li>").text("time turner").addClass("secret");
+    $($storage).append($timeTuner);
     // leash (for your pet, be sure to give this list element the same class as you gave your pet)
-    // Bertie Bott's Every Flavor [Jelly] Beans.
-    // append the unordered list to your container div
-
-    const $ul = $("<ul>")
-
-    $ul.attr("ul", "storage").val("trunk")
-    const $li = $("<li>").text("butter beer")
-
-
-    $li.addClass("secret").text("invisibility cloak")
-
-    $("<ul>").appendTo("<li>")
-
-    $("#container").append($ul, $li)
-
+    const $leash = $("<li>").text("leash").addClass("cat");
+    $($storage).append($leash);
+    // Bertie Bott's Every Flavor [Jelly] Beans. Append the unordered list to your container div
+    const $jellyBeans = $("<li>").text("Bertie Bot's Every Flavor Beans");
+    $($storage).append($jellyBeans);
 
 
 
@@ -70,6 +69,7 @@ $(() => {
     // Hint: Look under More Examples, <p>Simple table with header</p> at MDN to see the correct HTML element layout
 
     // Right above your table add an h5 that says 'Spring 2017'
+
     // Inside the table add a thead element
     // Inside the thead element add two th elements
     // in the first th add the text Day
