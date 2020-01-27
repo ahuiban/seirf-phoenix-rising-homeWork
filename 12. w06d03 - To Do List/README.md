@@ -49,7 +49,7 @@ NOTE: if you want a challenge, feel free to start from scratch!
 ## Stuff for you to do:
 
 
-## PART ONE
+## PART ONE (Required)
 
 
 1. To use the starter code, go into the `to_do_app` folder (alternatively, you are welcome to start totally from scratch)
@@ -68,18 +68,18 @@ $(() => {
 ```
 Remember the general flow of what is happening. The user makes an action, you run some code in order to process this action, the results of the action are rendered to the page, and then you wait until another action takes place.
 
-## PART TWO
+## PART TWO (Required)
 
 When the user clicks the `add` button, the input box value should be added to their to-do list.
 
-## PART THREE
+## PART THREE (Required)
 When the user clicks the `add` button, the input should display nicely rather than just text that keeps joining on the same line.
 
 * Hint: consider adding the new information into an array of to-dos and display all of the items in that array.
 
 **The user should be able to see all of the todos that they have created.**
 
-## PART FOUR
+## PART FOUR (Optional)
 
 The user should be able to click 'done' on a todo and have it move to the completed column.
 
@@ -92,7 +92,7 @@ The user should be able to click 'done' on a todo and have it move to the comple
 * When the button 'COMPLETED' is clicked, set the background color of the target to-do-item to `#ED6495`
 
 
-## PART FIVE - Delete
+## PART FIVE - Delete (Optional)
 
 The user should be able to delete a to-do item from the completed list.
 
