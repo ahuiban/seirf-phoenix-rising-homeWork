@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+#mainGameFrame {
+    margin: 100px;
+width: 300px;
+height: 300px;
+}
+
+#mainGameFrame .square {
+    float: left;
+    display: inline-block;
+    margin: 0;
+    width: 96px;
+    height: 96px;
+    font: arial 60px bold;
+    text-align: center;
+    line-height: 96px;
+    cursor: pointer;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #666;
+    background: no-repeat;
+
+}
