@@ -8,7 +8,7 @@ for (let x = 0; x <= 8; x++) {
 };
 
 $(function () {
-    $(".scuare").blind("click", function () {
+    $(".scuare").bind("click", function () {
         const squareID = $(this).attr("id");
 
         if (!squareArray[squareID]) {
