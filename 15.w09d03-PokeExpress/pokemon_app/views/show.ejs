@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Pokemon App</title>
+</head>
+
+<style type="text/css">
+    body {
+        color: blanchedalmond;
+        background-color: steelblue;
+    }
+</style>
+
+<body>
+    <h1>Gotta Catch 'Em All!</h1>
+    <br>
+
+
+    <h2><%= pokemon.name.charAt(0).toUpperCase() + pokemon.name.substring(1) %></h2>
+    <br>
+    <img src="<%=pokemon.img%>.jpg">
+    <br>
+
+    <a href="/pokemon">go back</a>
+
+</body>
+
+</html>
