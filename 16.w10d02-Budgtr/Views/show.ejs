@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/skeleton.css">
+
+
+    <title>Bugtr</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1> <%= budgetItem.name %> </h1>
+        <button><a href='/'>Go Back</a></button>
+        <div class="field-title">Date</div>
+        <%=budgetItem.date %>
+        <div class="field-title">Name</div>
+        <%=budgetItem.name %>
+        <div class="field-title">From</div>
+        <%=budgetItem.from %>
+        <div class="field-title">Amount</div>
+        <%=budgetItem.amount %>
+        <div class="field-title">Tags</div>
+        <%=budgetItem.tags %>
+    </div>
+</body>
+
+</html>
