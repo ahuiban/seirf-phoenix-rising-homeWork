@@ -7,8 +7,8 @@ const Pokemon = require("./models/pokemon.js");
 // middleware:
 app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride("_method"));
-// routes:
-// INDEX
+// routes: 
+// INDEX   
 app.get("/pokemon", (req, res) => {
     res.render("index.ejs", { data: Pokemon });
 });
