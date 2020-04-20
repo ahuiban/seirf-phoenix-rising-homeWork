@@ -5,20 +5,6 @@ npm i express ejs method-override mongoose
 nodemon
 */
 
-/*
-
-RESTful Routes
-#	Action	|URL	        |HTTP Verb	|EJS view 	|mongoose method
-1	Index	|/products/         |GET        |index.ejs  |Product.find()
-2	Show	|/products/:id      |GET        |show.ejs   |Product.findById()
-3	New	    |/products/new      |GET        |new.ejs	|none
-4	Create	|/products/	        |POST       |none       |Product.create(req.body)
-5	Edit	|/products/:id/edit	|GET        |edit.ejs   |Product.findById()
-6	Update	|/products/:id      |PUT        |none       |Product.findByIdAndUpdate()
-7	Destroy	|/products/:id      |DELETE     |none       |Product.findByIdAndDelete()
-
-*/
-
 
 const express = require('express')
 const app = express()
