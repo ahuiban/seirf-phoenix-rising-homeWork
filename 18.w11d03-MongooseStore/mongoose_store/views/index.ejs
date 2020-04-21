@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Products</title>
+</head>
+
+<body>
+    <h1>List of Products</h1>
+    <a href="/products/new">
+        <input type="button" class='medium-button' value="create new Product">
+    </a>
+    <a href="/users/checkout/<%=users[0].id%>">
+        <input type="button" class='medium-button' value="View Cart">
+    </a>
+    <ul>
+        <% for(let i = 0; i < products.length; i++){ %>
+        <div class="container">
+            <li>Name: <%=products[i].name%></li>
+            <li class="description">Description: <%=products[i].description%></li>
+            <li>Price: $<%=products[i].price%></li>
+            <li>Quantity: <%=products[i].qty%></li>
+            <img src="<%=products[i].img%>"><br>
+
+            <% if (products[i].qty > 0){ %>
+            <form action="/products/<%=products[i].id%>/buy?_method=PUT" method="POST">
+                <div class="buy"><input type="submit" value="Add to Cart"></div>
+            </form>
+            <% } else { %>
+            <div class="buy red"> Product is out of stock</div>
+            <% } %>
+            <div class="button-container">
+                <a href="/products/<%=products[i].id%>">
+                    <input type="button" value="See Product">
+                </a>
+                <form action='/products/<%=products[i].id%>?_method=DELETE' method="POST">
+                    <input type="submit" value="DELETE">
+                </form>
+                <a href="/products/<%=products[i].id%>/edit">
+                    <input type="button" value="Edit">
+                </a>
+            </div>
+        </div>
+        <% } %>
+    </ul>
+
+</body>
+
+</html>
