@@ -2,7 +2,7 @@
 Afternoon Lab
 
 1. 
-Easy Does It
+Easy Does It 
 Create an array that contains three quotes and store it in a variable called quotes.
 R:
 const quotes = ["quoteNumberOne", "quoteNumberTwo", "quoteNumberThree"]
@@ -127,6 +127,3 @@ thomsCloset[1][2] = "Footie Pajamas"
 
 
 */
-
-
-
