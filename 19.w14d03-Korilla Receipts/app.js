@@ -48,9 +48,9 @@ const receipts = [
       sauce: "Green Crack",
       toppings: ["Baby Bok Choy", "Cucumber Kimchi"],
       drink: "Korchata",
-      cost: 22
+      cost: 22,
     },
-    paid: false
+    paid: false,
   },
   {
     person: "Mark",
@@ -61,9 +61,9 @@ const receipts = [
       sauce: "Korilla",
       toppings: ["Yuzu Pickled Sweet Pepper", "Kale"],
       drink: "Korchata",
-      cost: 19
+      cost: 19,
     },
-    paid: false
+    paid: false,
   },
   {
     person: "Matt",
@@ -74,10 +74,10 @@ const receipts = [
       sauce: "K'lla",
       toppings: ["Blue Potato Salad", "Pico De Gallo", "Red Kimchi"],
       drink: "Sparkling Blood Orange Soda",
-      cost: 20
+      cost: 20,
     },
-    paid: true
-  }
+    paid: true,
+  },
 ];
 
 class Receipt extends React.Component {
@@ -104,13 +104,13 @@ class App extends React.Component {
     // receipt2: receipt2,
     // receipt3: receipt3
     //Dinamic rendering
-    receipts: receipts
+    receipts: receipts,
   };
 
   render() {
     return (
       <div>
-        {this.state.receipts.map(receipt => {
+        {this.state.receipts.map((receipt) => {
           return !receipt.paid ? <Receipt receipt={receipt} /> : null;
         })}
       </div>
