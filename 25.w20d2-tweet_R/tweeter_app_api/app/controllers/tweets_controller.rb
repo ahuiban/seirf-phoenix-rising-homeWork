@@ -19,6 +19,15 @@ class TweetsController < ApplicationController
 end
 
 
+def update
+    tweet = Tweet.find(params[:id])
+    tweet.update(tweet_params)
+    render(json: { tweet: tweet })
+  end
+
+
+
+
 private
 def tweet_params
     params.require(:tweet).permit(:title, :content, :author)
