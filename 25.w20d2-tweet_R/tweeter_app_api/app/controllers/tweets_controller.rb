@@ -1,7 +1,7 @@
 class TweetsController < ApplicationController
 
     def index
-        render json: { status: "Everything is working fine", tweet: Tweet.all}
+        render json: { status: "200", tweet: Tweet.all}
     end
 
     def show
