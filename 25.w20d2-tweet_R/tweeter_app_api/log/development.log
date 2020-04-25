@@ -150,3 +150,129 @@ Processing by TweetsController#index as HTML
 Completed 200 OK in 14ms (Views: 4.8ms | ActiveRecord: 8.0ms | Allocations: 4208)
 
 
+Started GET "/tweets" for 127.0.0.1 at 2020-04-25 16:36:42 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TweetsController#index as HTML
+  [1m[36mTweet Load (0.6ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  ↳ app/controllers/tweets_controller.rb:4:in `index'
+Completed 200 OK in 28ms (Views: 20.9ms | ActiveRecord: 6.3ms | Allocations: 4138)
+
+
+Started GET "/tweets" for 127.0.0.1 at 2020-04-25 16:44:50 -0400
+  
+SyntaxError (/Users/andrei/Desktop/seirf-phoenix-rising-homework/25.w20d2-tweet_R/tweeter_app_api/app/controllers/tweets_controller.rb:27: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/tweets_controller.rb:27: syntax error, unexpected end-of-input, expecting end
+app/controllers/tweets_controller.rb:27: syntax error, unexpected end-of-input, expecting end
+Started GET "/tweets" for 127.0.0.1 at 2020-04-25 16:45:25 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/andrei/Desktop/seirf-phoenix-rising-homework/25.w20d2-tweet_R/tweeter_app_api/app/controllers/tweets_controller.rb:27: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/tweets_controller.rb:27: syntax error, unexpected end-of-input, expecting end
+app/controllers/tweets_controller.rb:27: syntax error, unexpected end-of-input, expecting end
+Started GET "/tweets" for 127.0.0.1 at 2020-04-25 16:45:31 -0400
+  
+SyntaxError (/Users/andrei/Desktop/seirf-phoenix-rising-homework/25.w20d2-tweet_R/tweeter_app_api/app/controllers/tweets_controller.rb:27: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/tweets_controller.rb:27: syntax error, unexpected end-of-input, expecting end
+app/controllers/tweets_controller.rb:27: syntax error, unexpected end-of-input, expecting end
+Started GET "/tweets" for 127.0.0.1 at 2020-04-25 16:45:53 -0400
+  
+SyntaxError (/Users/andrei/Desktop/seirf-phoenix-rising-homework/25.w20d2-tweet_R/tweeter_app_api/app/controllers/tweets_controller.rb:27: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/tweets_controller.rb:27: syntax error, unexpected end-of-input, expecting end
+app/controllers/tweets_controller.rb:27: syntax error, unexpected end-of-input, expecting end
+Started GET "/tweets" for 127.0.0.1 at 2020-04-25 16:45:54 -0400
+  
+SyntaxError (/Users/andrei/Desktop/seirf-phoenix-rising-homework/25.w20d2-tweet_R/tweeter_app_api/app/controllers/tweets_controller.rb:27: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/tweets_controller.rb:27: syntax error, unexpected end-of-input, expecting end
+app/controllers/tweets_controller.rb:27: syntax error, unexpected end-of-input, expecting end
+Started GET "/tweets" for 127.0.0.1 at 2020-04-25 16:46:27 -0400
+Processing by TweetsController#index as HTML
+  [1m[36mTweet Load (0.7ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  ↳ app/controllers/tweets_controller.rb:4:in `index'
+Completed 200 OK in 14ms (Views: 4.3ms | ActiveRecord: 7.5ms | Allocations: 4213)
+
+
+Started GET "/tweets" for 127.0.0.1 at 2020-04-25 16:46:31 -0400
+Processing by TweetsController#index as */*
+  Parameters: {"tweet"=>{}}
+  [1m[36mTweet Load (0.4ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  ↳ app/controllers/tweets_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.4ms | Allocations: 1030)
+
+
+Started POST "/tweets" for 127.0.0.1 at 2020-04-25 16:48:42 -0400
+Processing by TweetsController#create as */*
+  Parameters: {"tweet"=>{"title"=>"ramdom title", "content"=>"random content", "author"=>"Andrei H."}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 555)
+
+
+  
+NoMethodError (undefined method `new' for nil:NilClass):
+  
+app/controllers/tweets_controller.rb:13:in `create'
+Started GET "/tweets" for 127.0.0.1 at 2020-04-25 16:49:02 -0400
+Processing by TweetsController#index as HTML
+  [1m[36mTweet Load (0.4ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  ↳ app/controllers/tweets_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.4ms | Allocations: 1011)
+
+
+Started GET "/tweets" for 127.0.0.1 at 2020-04-25 16:49:02 -0400
+Processing by TweetsController#index as HTML
+  [1m[36mTweet Load (0.3ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  ↳ app/controllers/tweets_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.3ms | Allocations: 1031)
+
+
+Started POST "/tweets" for 127.0.0.1 at 2020-04-25 16:51:03 -0400
+Processing by TweetsController#create as */*
+  Parameters: {"tweet"=>{"title"=>"ramdom title", "content"=>"random content", "author"=>"Andrei H."}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 541)
+
+
+  
+NoMethodError (undefined method `new' for nil:NilClass):
+  
+app/controllers/tweets_controller.rb:13:in `create'
+Started GET "/tweets" for 127.0.0.1 at 2020-04-25 16:51:26 -0400
+Processing by TweetsController#index as */*
+  Parameters: {"tweet"=>{"title"=>"ramdom title", "content"=>"random content", "author"=>"Andrei H."}}
+  [1m[36mTweet Load (0.4ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  ↳ app/controllers/tweets_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.4ms | Allocations: 1013)
+
+
+Started POST "/tweets" for 127.0.0.1 at 2020-04-25 16:52:24 -0400
+Processing by TweetsController#create as */*
+  Parameters: {"tweet"=>{"title"=>"ramdom title", "content"=>"random content", "author"=>"Andrei H."}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 540)
+
+
+  
+NoMethodError (undefined method `new' for nil:NilClass):
+  
+app/controllers/tweets_controller.rb:13:in `create'
+Started POST "/tweets" for 127.0.0.1 at 2020-04-25 16:54:13 -0400
+Processing by TweetsController#create as */*
+  Parameters: {"tweet"=>{"title"=>"ramdom title", "content"=>"random content", "author"=>"Andrei H."}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tweets_controller.rb:14:in `create'
+  [1m[36mTweet Create (0.5ms)[0m  [1m[32mINSERT INTO "tweets" ("title", "content", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "ramdom title"], ["content", "random content"], ["author", "Andrei H."]]
+  ↳ app/controllers/tweets_controller.rb:14:in `create'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tweets_controller.rb:14:in `create'
+Completed 201 Created in 14ms (Views: 0.3ms | ActiveRecord: 6.5ms | Allocations: 5127)
+
+
+Started GET "/tweets" for 127.0.0.1 at 2020-04-25 16:54:19 -0400
+Processing by TweetsController#index as */*
+  Parameters: {"tweet"=>{"title"=>"ramdom title", "content"=>"random content", "author"=>"Andrei H."}}
+  [1m[36mTweet Load (5.2ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets"[0m
+  ↳ app/controllers/tweets_controller.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 2.2ms | ActiveRecord: 5.2ms | Allocations: 1115)
+
+
