@@ -7,20 +7,20 @@ const Pokemon = require("./models/pokemon.js");
 // middleware:
 app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride("_method"));
-// routes: 
-// INDEX   
+// routes:
+// INDEX
 app.get("/pokemon", (req, res) => {
-    res.render("index.ejs", { data: Pokemon });
+  res.render("index.ejs", { data: Pokemon });
 });
 // SHOW
 app.get("/pokemon/:id", (req, res) => {
-    res.render("show.ejs", { data: Pokemon[req.params.id] });
+  res.render("show.ejs", { data: Pokemon[req.params.id] });
 });
 // Redirect root to /pokemon index:
 app.get("/", (req, res) => {
-    res.redirect("/pokemon");
+  res.redirect("/pokemon");
 });
 // web server:
 app.listen(port, () => {
-    console.log(`Pokedex server is listening on port ${port}`);
+  console.log(`Pokedex server is listening on port ${port}`);
 });
