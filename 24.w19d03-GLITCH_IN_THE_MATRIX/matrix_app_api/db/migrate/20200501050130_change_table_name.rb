@@ -1,5 +1,5 @@
 class ChangeTableName < ActiveRecord::Migration[6.0]
   def change
-    rename_table :characters, :matrix_characters
+    rename_table :matrix_characters, :characters
   end
 end
